@@ -1,30 +1,30 @@
 @import url(https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap);/*Importar una url: la fuente que se va a utilizar*/
 
-html, body{
-  background: #ccc;
+html, body{ /* Aplica el estilo para toda la página*/
+  background: #ccc; /* fondo de la página color gris */
 }
  *{
    font-family: "Kiwi Maru", arial, sans-serif; /*Mandar a llamar la fuente de @import;*/
    box-sizing: border-box;/*Siempre va a estar dentro de la caja*/
    font-size: 16px;/*Tamaño de la fuente*/
  }
- .pie{
-   width: 500px;
-   height: 60px;
-   background-color: #99ccff;
-   border: none;
+ .pie{ /* clase pie*/
+   width: 500px; /* ancho de 500 pixeles*/
+   height: 60px; /* alto de 60 pixeles*/
+   background-color: #99ccff; /* fondo de color azul celeste*/
+   border: none; /* sin borde */
  }
 
-.logo{
-  width: 50px;
-  height: 50px;
+.logo{ /* clase logo */
+  width: 50px; /* ancho 50 px*/
+  height: 50px; /* alto 50 px */
 }
 
-.icono{
-  width: 100px;
-  height: 100px;
+.icono{ /* clase icono*/
+  width: 100px; /*  ancho 100 pixeles*/
+  height: 100px; /* alto 100 pixeles*/
 }
 
-.final{
-  background-color: #66ccff;
+.final{ /*clase final */
+  background-color: #66ccff; /* fondo de color azul celeste*/
 }
