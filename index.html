@@ -87,6 +87,7 @@
     <!--Termina slider-->
     <!--Inicia card-->
         <div class="container py-5"> <!-- Dentro de un container con padding de 5 -->
+          <h2 class="text-center py-4">Contenido</h2>
           <div class="row"> <!-- Una línea -->
             <div class="col"> <!-- Se divide en columnas -->
               <div class="card"> <!-- Inicia tarjeta -->
@@ -131,6 +132,28 @@
           </div>
       </div>
   <!--Termina card-->
+  <!--inicia mapa-->
+      <div class="container">
+        <h2 class="text-center py-4">Mapa</h2>
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+                <div id="map"></div>
+            </div>
+          </div>
+      </div> <br>
+        <!--Estilo de mapa-->
+        <style media="screen">
+          #map{
+            margin: auto;
+            margin-right: 0px;
+            padding: 40px;
+            height: 450px;
+            width: 100%;
+            filter: grayscale(80%);
+            border-radius: 10px;
+          }
+        </style>
+  <!--Termina mapa-->
   <!--Inicia footer-->
        <footer class="bg-card">
          <div class="footer-copyright text-center py-3 final"> <!-- Se alinea el texto al centro con un padding de 3 y una clase llamada final-->
@@ -172,6 +195,23 @@
        </div> <!-- Termina las divisiones -->
       </footer>
       <!--Termina Pie de página-->
+      <!-- inicia los script -->
+          <script type="text/javascript">
+              var map;
+              var lugar = {lat:19.4486875 , lng:-99.2701538 };
+              function initMap(){
+                map = new google.maps.Map(document.getElementById('map'), {
+                  center: {lat:19.4486875 , lng:-99.2701538 },
+                  zoom:16
+                });
+                var marker = new google.maps.Marker({
+                  position: lugar,
+                  map: map,
+                  title:'Mi casa uwu'
+                });
+              }
+           </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJjhxdqPWxBzSyYeCChqyuIme1KzyB5qQ&callback=initMap&Librarie"></script>
     <script src="js/bootstrap.js"></script> <!-- Se inserta el framework en js  -->
   </body> <!-- Termina cuerpo de la página -->
 </html> <!-- Termina el documento HTML -->
